@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HOME TRIX | 권재용</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<div class="card-page">
+
+    <!-- ==============================
+         HERO
+    =============================== -->
+
+    <section class="hero">
+
+        <div class="brand-sub">
+            HOME + METRICS + X
+        </div>
+
+        <div class="brand-title">
+            <span>HOME</span>
+            <span>TRIX</span>
+        </div>
+
+        <!-- 실제 사진 -->
+        <img
+            src="images/profile.jpg"
+            class="profile-photo"
+            alt=""
+        >
+
+    </section>
+
+
+    <!-- ==============================
+         PROFILE
+    =============================== -->
+
+    <section class="profile">
+
+        <h1 class="profile-name">
+            권재용
+        </h1>
+
+        <p class="profile-job">
+            홈트릭스 대표
+        </p>
+
+
+        <!-- SNS -->
+
+        <div class="sns-list">
+
+            <!-- Instagram -->
+            <a
+                href="#"
+                class="sns-item"
+                aria-label="Instagram"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    class="instagram-icon"
+                >
+                    <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5">
+                    </rect>
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4">
+                    </circle>
+
+                    <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1">
+                    </circle>
+                </svg>
+            </a>
+
+
+            <!-- Blog -->
+            <a
+                href="#"
+                class="sns-item"
+                aria-label="Blog"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    class="blog-icon"
+                >
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="10">
+                    </circle>
+
+                    <path
+                        d="M8 7.5h6.1
+                           c2.2 0 3.9 1.7 3.9 3.9v1.2
+                           c0 2.2-1.7 3.9-3.9 3.9H11
+                           v-2.2h3.1
+                           c.7 0 1.2-.5 1.2-1.2H11v-2.1h4.3
+                           c-.2-.7-.7-1.1-1.4-1.1H11v5.9H8V7.5z">
+                    </path>
+                </svg>
+            </a>
+
+
+            <!-- YouTube -->
+            <a
+                href="#"
+                class="sns-item youtube"
+                aria-label="YouTube"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    class="youtube-icon"
+                >
+                    <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="4">
+                    </rect>
+
+                    <path
+                        d="M10 9
+                           L15 12
+                           L10 15
+                           Z">
+                    </path>
+                </svg>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         CONTACT
+    =============================== -->
+
+    <section class="contact">
+
+
+        <!-- 전화번호 -->
+
+        <div class="contact-item phone-item">
+
+            <div class="contact-label">
+                전화번호
+            </div>
+
+            <div class="contact-value">
+                010-2828-2617
+            </div>
+
+            <div class="contact-buttons">
+
+                <!-- 전화 -->
+                <button
+                    type="button"
+                    class="circle-button"
+                    onclick="callPhone()"
+                    aria-label="전화하기"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M21 16.7v2.5
+                               c0 1.1-.9 2-2 2
+                               C10.7 21.2 2.8 13.3 2.8 5
+                               c0-1.1.9-2 2-2h2.5
+                               c.9 0 1.7.6 1.9 1.5
+                               l.6 2.3
+                               c.2.7-.1 1.4-.6 1.8
+                               L7.8 9.7
+                               c1.3 2.4 3.2 4.3 5.6 5.6
+                               l1.1-1.9
+                               c.4-.6 1.1-.9 1.8-.6
+                               l2.3.6
+                               c.8.2 1.4 1 1.4 1.9z">
+                        </path>
+                    </svg>
+                </button>
+
+
+                <!-- 복사 -->
+                <button
+                    type="button"
+                    class="circle-button"
+                    onclick="copyText('010-2828-2617')"
+                    aria-label="전화번호 복사"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <rect
+                            x="8"
+                            y="8"
+                            width="10"
+                            height="10"
+                            rx="2">
+                        </rect>
+
+                        <path
+                            d="M16 8V6
+                               c0-1.1-.9-2-2-2H6
+                               c-1.1 0-2 .9-2 2v8
+                               c0 1.1.9 2 2 2h2">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- 이메일 -->
+
+        <div class="contact-item email-item">
+
+            <div class="contact-label">
+                이메일
+            </div>
+
+            <div class="contact-value email-value">
+                bandy0315@naver.com
+            </div>
+
+            <div class="contact-buttons">
+
+                <button
+                    type="button"
+                    class="circle-button"
+                    onclick="copyText('bandy0315@naver.com')"
+                    aria-label="이메일 복사"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <rect
+                            x="8"
+                            y="8"
+                            width="10"
+                            height="10"
+                            rx="2">
+                        </rect>
+
+                        <path
+                            d="M16 8V6
+                               c0-1.1-.9-2-2-2H6
+                               c-1.1 0-2 .9-2 2v8
+                               c0 1.1.9 2 2 2h2">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         NEWS
+    =============================== -->
+
+    <section class="news">
+
+        <h2 class="news-heading">
+            최신 소식
+        </h2>
+
+
+        <div class="news-grid">
+
+
+            <!-- NEWS 01 -->
+
+            <a href="#" class="news-card">
+
+                <img
+                    src="images/news01.jpg"
+                    alt=""
+                    class="news-image"
+                >
+
+                <p class="news-title">
+                    군포시 산본로 296 무궁화주공 17평 검사
+                </p>
+
+            </a>
+
+
+            <!-- NEWS 02 -->
+
+            <a href="#" class="news-card">
+
+                <img
+                    src="images/news02.jpg"
+                    alt=""
+                    class="news-image"
+                >
+
+                <p class="news-title">
+                    입주할 집에 전선이 오래되어 화재우려가 있다면?
+                </p>
+
+            </a>
+
+
+            <!-- NEWS 03 -->
+
+            <a href="#" class="news-card">
+
+                <img
+                    src="images/news03.jpg"
+                    alt=""
+                    class="news-image"
+                >
+
+                <p class="news-title">
+                    아이와 함께 30년된 구축 아파트에 입주한다면...
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         MORE NEWS
+    =============================== -->
+
+    <p class="more-news">
+        더 많은 소식은 상단의 링크에서 확인해보세요!
+    </p>
+
+
+    <!-- ==============================
+         FIXED SHARE
+    =============================== -->
+
+    <button
+        type="button"
+        class="share-button"
+        onclick="shareCard()"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            class="share-icon"
+        >
+            <path
+                d="M12 16V4">
+            </path>
+
+            <path
+                d="M7 9l5-5 5 5">
+            </path>
+
+            <path
+                d="M5 13v5
+                   c0 1.1.9 2 2 2h10
+                   c1.1 0 2-.9 2-2v-5">
+            </path>
+        </svg>
+
+        <span>
+            명함 공유
+        </span>
+
+    </button>
+
+
+    <!-- Toast -->
+
+    <div
+        id="toast"
+        class="toast">
+    </div>
+
+</div>
+
+
+<script src="card.js"></script>
+
+</body>
+</html>

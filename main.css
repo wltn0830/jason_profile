@@ -1,0 +1,733 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #ffffff;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-family:
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        Arial,
+        sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+}
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.card-page {
+    position: relative;
+
+    width: 100%;
+    max-width: 390px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 324px;
+
+    background: #1b3768;
+
+    overflow: hidden;
+}
+
+
+/*
+    흰색 곡선
+
+    양쪽 : 약 315px
+    중앙 : 약 255px
+*/
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    left: -15%;
+    bottom: -118px;
+
+    width: 130%;
+    height: 190px;
+
+    background: #ffffff;
+
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+    z-index: 1;
+}
+
+
+/* ==================================================
+   BRAND
+================================================== */
+
+.brand-sub {
+    position: absolute;
+
+    top: 32px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 20px;
+
+    letter-spacing: -0.3px;
+
+    z-index: 3;
+}
+
+
+.brand-title {
+    position: absolute;
+
+    top: 72px;
+    left: 0;
+
+    width: 100%;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: 400;
+
+    text-align: center;
+
+    z-index: 3;
+}
+
+.brand-title span {
+    display: block;
+
+    font-size: 65px;
+
+    line-height: 0.82;
+
+    letter-spacing: -4px;
+}
+
+
+
+/* ==================================================
+   PROFILE PHOTO
+================================================== */
+
+.profile-photo {
+    position: absolute;
+
+    left: 50%;
+    top: 170px;
+
+    width: 154px;
+    height: 154px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: #d9d9d9;
+
+    z-index: 5;
+}
+
+
+/* ==================================================
+   PROFILE
+================================================== */
+
+.profile {
+    width: 100%;
+
+    padding: 13px 35px 0;
+
+    text-align: center;
+}
+
+.profile-name {
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    line-height: 31px;
+
+    letter-spacing: -0.8px;
+}
+
+.profile-job {
+    margin: 0;
+
+    margin-top: 0px;
+
+    color: #333333;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 24px;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* ==================================================
+   SNS
+================================================== */
+
+.sns-list {
+    display: flex;
+
+    position: relative;
+
+    width: 100%;
+    height: 62px;
+
+    margin-top: 13px;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sns-item {
+    position: relative;
+
+    flex: 1;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition:
+        background-color 0.15s ease;
+}
+
+.sns-item:hover {
+    background: #71819e;
+}
+
+.sns-item:hover svg {
+    fill: #ffffff;
+}
+
+.youtube:hover svg path {
+    fill: #71819e;
+}
+.sns-item:hover .instagram-icon {
+    fill: #71819e;
+}
+.sns-item:hover .instagram-icon circle:last-child {
+    fill: #ffffff;
+
+
+    stroke: none;
+}
+
+.sns-item+.sns-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 1px;
+    height: 28px;
+
+    transform: translateY(-50%);
+
+    background: #eeeeee;
+}
+
+
+/* Instagram */
+
+.instagram-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: none;
+
+    stroke: #000000;
+
+    stroke-width: 2;
+}
+
+.instagram-icon circle:last-child {
+    fill: #000000;
+
+    stroke: none;
+}
+
+
+/* Blog */
+
+.blog-icon {
+    width: 25px;
+    height: 25px;
+
+    fill: #000000;
+}
+
+.blog-icon path {
+    fill: #ffffff;
+}
+
+
+/* YouTube */
+
+.youtube {
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+}
+
+.youtube-icon {
+    width: 26px;
+    height: 26px;
+
+    fill: #000000;
+}
+
+.youtube-icon path {
+    fill: #ffffff;
+}
+
+
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact {
+    width: 100%;
+
+    padding:30px 45px ;
+}
+
+
+/* 개별 연락처 */
+
+.contact-item {
+    position: relative;
+
+    width: 100%;
+}
+
+.phone-item {
+    margin-bottom: 24px;
+}
+
+.email-item {
+    margin-bottom: 0;
+}
+
+
+/* Label */
+
+.contact-label {
+    margin: 0 0 4px;
+
+    color: #999999;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 22px;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Value */
+
+.contact-value {
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    line-height: 27px;
+
+    letter-spacing: -0.6px;
+
+    white-space: nowrap;
+}
+
+
+/* Buttons */
+
+.contact-buttons {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.circle-button {
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #f1f1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #999999;
+
+    cursor: pointer;
+}
+
+.circle-button svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ==================================================
+   NEWS
+================================================== */
+
+.news {
+    padding: 30px 45px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* 제목 */
+
+.news-heading {
+    margin: 0 0 18px;
+
+    color: #111111;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    line-height: 24px;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Grid */
+
+.news-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 10px;
+
+    row-gap: 18px;
+}
+
+
+/* 카드 */
+
+.news-card {
+    display: block;
+
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* 이미지 */
+
+.news-image {
+    width: 100%;
+    height: 64px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    background: #d9d9d9;
+}
+
+
+/* 뉴스 제목 */
+
+.news-title {
+    margin: 8px 4px 0;
+
+    color: #222222;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 17px;
+
+    letter-spacing: -0.5px;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   MORE NEWS
+================================================== */
+
+.more-news {
+    margin:
+        50px 35px 0;
+
+    padding-bottom: 91px;
+
+    text-align: center;
+
+    color: #b6b6b6;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 16px;
+
+    letter-spacing: -0.4px;
+}
+
+
+/* ==================================================
+   FIXED SHARE
+================================================== */
+
+.share-button {
+    position: fixed;
+
+    left: max(calc(50% - 182px),
+            13px);
+
+    bottom: 25px;
+
+    width: 64px;
+    height: 64px;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #67b8f5;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 100;
+}
+
+.share-icon {
+    width: 27px;
+    height: 27px;
+
+    margin-bottom: 0;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 2.3;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.share-button span {
+    font-size: 10px;
+    font-weight: 500;
+
+    line-height: 13px;
+
+    letter-spacing: -0.4px;
+}
+
+
+/* ==================================================
+   TOAST
+================================================== */
+
+.toast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 105px;
+
+    transform:
+        translate(-50%, 10px);
+
+    padding:
+        9px 15px;
+
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+
+    z-index: 200;
+
+    white-space: nowrap;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform:
+        translate(-50%, 0);
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 389px) {
+
+    .brand-title span {
+        font-size: 61px;
+    }
+
+    .profile-photo {
+        width: 148px;
+        height: 148px;
+    }
+
+    .contact-value {
+        font-size: 18px;
+    }
+
+    .news-title {
+        font-size: 11px;
+    }
+}
+
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+@media (min-width: 391px) {
+
+    body {
+        background: #eeeeee;
+    }
+
+    .card-page {
+        min-height: 100vh;
+
+        box-shadow:
+            0 0 30px rgba(0, 0, 0, 0.05);
+    }
+}
